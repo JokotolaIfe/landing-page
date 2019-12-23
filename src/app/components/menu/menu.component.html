@@ -1,0 +1,47 @@
+<!--Navbar-->
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark bg-danger" [containerInside]="false">
+
+  <!-- Navbar brand -->
+  <mdb-navbar-brand><a class="navbar-brand" routerLink="/home" > &nbsp; </a></mdb-navbar-brand>
+
+  <!-- Collapsible content -->
+  <links>
+
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto wow fadeInUp" data-wow-delay="0.6s">
+      <li class="nav-item active">
+        <a class="nav-link waves-light" mdbWavesEffect>Home<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light" mdbWavesEffect>About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light" mdbWavesEffect  >Products</a>
+      </li>
+
+      <li class="nav-item">
+          <a class="nav-link waves-light" mdbWavesEffect>Testimonials</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link waves-light" mdbWavesEffect>Location<span class="sr-only">(current)</span></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link waves-light" mdbWavesEffect>Contact<span class="sr-only">(current)</span></a>
+        </li>
+    </ul>
+    <!-- Links -->
+
+    <form class="form-inline waves-light" mdbWavesEffect>
+        <div class="md-form my-0">
+          <input class="form-control mr-sm-2" type="text" [(ngModel)]="searchTerm" placeholder="Search">
+        </div>
+      </form>
+      
+  </links>
+  <!-- Collapsible content -->
+
+  
+</mdb-navbar>
+<!--/.Navbar-->

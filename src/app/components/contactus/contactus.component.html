@@ -1,0 +1,106 @@
+
+              <div class="container">
+                    <section class="my-5">
+
+                            <!-- Section heading -->
+                            <h2 class="h1-responsive font-weight-bold text-center my-5">Contact us</h2>
+                            <!-- Section description -->
+                            <p class="text-center w-responsive mx-auto pb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+                                    a matter of hours to help you.</p>
+                          
+                            <!-- Grid row -->
+                            <div class="row">
+                          
+                              <!-- Grid column -->
+                              <div class="col-lg-5 mb-lg-0 mb-4">
+                          
+                                <!-- Form with header -->
+                                <div class="card">
+                                  <div class="card-body">
+                                    <!-- Header -->
+                                    <div class="form-header blue accent-1">
+                                      <h3 class="mt-2"><i class="fas fa-envelope"></i> Write to us:</h3>
+                                    </div>
+                                    <p class="dark-grey-text">We'll write rarely, but only the best content.</p>
+                                    <!-- Body -->
+                                    <div>
+                                      <div class="md-form">
+                                        <i class="fas fa-user prefix grey-text"></i>
+                                        <input [(ngModel)]="name" name="name" type="text" id="form-name" class="form-control" mdbInput>
+                                        <label for="form-name">Your name</label>
+                                      </div>
+                                      <div class="md-form">
+                                        <i class="fas fa-envelope prefix grey-text"></i>
+                                        <input type="text" [(ngModel)]="email" name="email" id="form-email" class="form-control" mdbInput>
+                                        <label for="form-email">Your email</label>
+                                      </div>
+                                      <div class="md-form">
+                                        <i class="fas fa-tag prefix grey-text"></i>
+                                        <input [(ngModel)]="subject" name="subject" type="text" id="form-Subject" class="form-control" mdbInput>
+                                        <label for="form-Subject">Subject</label>
+                                      </div>
+                                      <div class="md-form">
+                                        <i class="fas fa-pencil-alt prefix grey-text"></i>
+                                        <textarea [(ngModel)]="message" name="message" id="form-text" class="form-control md-textarea" rows="3" mdbInput></textarea>
+                                        <label for="form-text">Send message</label>
+                                      </div>
+                                      <div class="text-center" [disabled]="name  == '' || email == '' || subject == '' || message == ''">
+                                              <a class="btn btn-primary"  (click)="send(name, email, subject, message)">Send</a>
+                                          </div>
+                                    </div>
+                                    
+                                  </div>
+                                </div>
+                                <!-- Form with header -->
+                          
+                              </div>
+                              <!-- Grid column -->
+                          
+                              <!-- Grid column -->
+                              <div class="col-lg-7">
+                          
+                                <!--Google map-->
+                                <div id="map-container-section" class="z-depth-1-half map-container-section mb-4" style="height: 400px">
+                                  <iframe class="view overlay rounded z-depth-2 mb-lg-0 mb-4 waves-light" src="https://maps.google.com/maps?q=Ijegun%2C%20Ikotun&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                                    style="border:0" allowfullscreen></iframe>
+                                </div>
+                                <!-- Buttons-->
+                                <div class="row text-center" style="font-weight: bolder;">
+                                  <div class="col-md-4">
+                                    <a class="btn-floating blue accent-1">
+                                      <i class="fas fa-map-marker-alt"></i>
+                                    </a>
+                                    <p>No 1, SeaWeed Av, Off Community Rd. Ijegun, Lagos</p>
+                                  </div>
+                                  <div class="col-md-4">
+                                    <a class="btn-floating blue accent-1">
+                                      <i class="fas fa-phone"></i>
+                                    </a>
+                                    <p>+234(0) 906 750 2530</p>
+                                    <p class="mb-md-0">Mon - Fri, 8:00-22:00</p>
+                                  </div>
+                                  <div class="col-md-4">
+                                    <a class="btn-floating blue accent-1">
+                                      <i class="fas fa-envelope"></i>
+                                    </a>
+                                    <p>jaywebs0@gmail.com</p>
+                                    <p class="mb-0">sale@abcfoods.com</p>
+                                  </div>
+                                </div>
+                          
+                              </div>
+                              <!-- Grid column -->
+                          
+                            </div>
+                            <!-- Grid row -->
+                          
+                          </section>
+              </div>
+
+
+
+
+
+              
+
+
